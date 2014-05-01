@@ -81,9 +81,10 @@ def delete_entry(task_id):
 @app.route('/tasks/')
 @login_required
 def tasks():
+	form = AddTask(request.form)
 	open_tasks = db.session.query(FTasks).filter_by(status='1').order_by(FTasks.due_date.asc())
 	closed_tasks = db.session.query(FTasks).filter_by(status='0').order_by(FTasks.due_date.asc())
-	return render_template('tasks.html', open_tasks=open_tasks, closed_tasks=closed_tasks)
+	return render_template('tasks.html', open_tasks=open_tasks, closed_tasks=closed_tasks, form=form)
 
 @app.route('/logout/')
 def logout():
