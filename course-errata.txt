@@ -1,0 +1,2 @@
+1. pg 151 - "In the above HTML, I used the <title> tag..." should be "In the below HTML, I use the <title> tag..."
+2. 
