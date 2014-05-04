@@ -1,0 +1,9 @@
+"Page", "Issue"
+151, "no save location given for new index.html"
+151, "'In the above HTML, I used the <title> tag...' should be 'In the below HTML, I use the <title> tag...'"
+152, "inconsistent indentation between the two examples"
+154, "<div class="container"> not specified in instructions"
+154, "the instructions call for the links to CSS files to be added 'just below the title,' but in subsequent examples they are above the title"
+158, "'then we'll edit the our CSS file' should be 'then we'll edit our CSS file'"
+159, "full template.html shows scripts section immediately before /body, but the previous section implied that the scripts should go with the css links in the head"
+ 
