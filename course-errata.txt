@@ -12,11 +12,11 @@
 
 - pg 159 - full template.html shows scripts section immediately before /body, but the previous section implied that the scripts should go with the css links in the head
 
-- pg  - 
+- pg 160 - "to access yout task list" should be "to access your task list"
 
-- pg  - 
+- pg 163 - not sure if it is important, but the last "color: white" entry is missing a semicolon
 
-- pg  - 
+- pg 166 - it wasn't clear, so my new app folder is within my old app folder. so, it goes c/realpython/flask-taskr/app/app/views.py, for example
 
 - pg  - 
 
