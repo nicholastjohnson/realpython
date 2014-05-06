@@ -2,10 +2,12 @@
 
 import os
 import unittest
-
-from views import app, db
-from models import User
+    
+from app import app, db
+from app.models import User, FTasks
 from config import basedir
+
+from datetime import datetime, date
 
 TEST_DB = 'test.db'
 
