@@ -14,7 +14,7 @@ def commit():
 	local("git add . && git commit -am '{}'".format(message))
 
 def push():
-	local("git push origin master")
+	local("git push heroku master")
 
 def prepare():
 	test()
@@ -22,7 +22,7 @@ def prepare():
 	push()
 
 def pull():
-	local("git pull origin master")
+	local("git pull heroku master")
 
 def heroku():
 	local("git push heroku master")
