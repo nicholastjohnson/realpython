@@ -34,5 +34,7 @@
 188, "should definitely mention to kick up virtualenv before installing all those dependencies"
 202, "we were told to stop the server a couple pages back, but in item 3 it assumes we have the server up"
 202, "item 3 should identify which app to click the manage button - it wasn't immediately clear"
-202, "there is no "upload and install packed application" section on the right side of the page"
+202, "there is no "upload and install packed application" section on the right side of the page (edit: I've spent a good bit of time searching for it, and I can't find it anywhere on the site)"
 204, "in item 4, explain how to check out the live app"
+204, "when trying to run git add . at the end of this section, I get a message saying that certain web2py paths were deleted. specifically: 'web2py/start/applications/seconds2minutes/errors/127.0.0.1.2014-05-22.22-50-09.b301d924-0295-4b4e-a846-bf89e6ef9ec9'"
+208, "the naming of clienta.py and clientc.py weren't obvious until I got to clientd.py and noticed that you didn't explicitly say what to name those two files"

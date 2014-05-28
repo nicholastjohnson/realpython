@@ -1,0 +1,5 @@
+Find what process is using a port
+lsof -i tcp:<port>
+
+Kill process using a particular port
+kill -9 <port>
