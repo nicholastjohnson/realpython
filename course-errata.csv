@@ -42,3 +42,6 @@
 218, "#2 - ...find the second instance of model and return the associated value: Civic."
 219, "When running the file, I only receive a 200 back - not 200 OK."
 219, "the link to echo JSON doesn't work"
+224, "consumer_key doesn't exist in the Twitter interface - api key and api secret are what we're looking for"
+225, "the coloring is off in the code block"
+225, "link to documentation returns 404"
