@@ -5,7 +5,8 @@ from fabric.contrib.console import confirm
 
 def test():
     with settings(warn_only=True):
-        result = local("python flask-taskr/test_tasks.py -v && python flask-taskr/test_users.py -v", capture=True)
+        result = local("python flask-taskr/test_tasks.py -v && \
+            python flask-taskr/test_users.py -v", capture=True)
     if result.failed and not confirm("Tests failed. Continue?"):
         abort("Aborted at user request.")
 
@@ -28,7 +29,8 @@ def heroku():
     local("git push heroku master")
 
 def heroku_test():
-    local("heroku run python flask-taskr/test_tasks.py -v && heroku run python flask-taskr/test_users.py -v")
+    local("heroku run python flask-taskr/test_tasks.py -v && \
+        heroku run python flask-taskr/test_users.py -v")
 
 def deploy():
     pull()
