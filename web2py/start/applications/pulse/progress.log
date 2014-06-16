@@ -1,0 +1,22 @@
+[2014-06-15 21:57:08] START
+[2014-06-15 22:01:38] EDIT pulse/controllers/default.py: -41
+[2014-06-15 22:04:08] EDIT pulse/views/default/index.html: -23
+[2014-06-15 22:04:36] CREATE default/pulser.html: 0
+[2014-06-15 22:06:21] EDIT pulse/views/default/pulser.html: 5
+[2014-06-15 22:10:16] EDIT pulse/views/default/pulser.html: 0
+[2014-06-15 22:14:01] EDIT pulse/controllers/default.py: 1
+[2014-06-15 22:16:39] EDIT pulse/controllers/default.py: 4
+[2014-06-15 22:17:53] EDIT pulse/views/default/pulser.html: 3
+[2014-06-15 22:21:50] EDIT pulse/views/layout.html: -128
+[2014-06-15 22:23:08] EDIT pulse/controllers/default.py: 0
+[2014-06-15 22:25:47] CREATE test/index.html: 0
+[2014-06-15 22:30:51] CREATE test.py: 0
+[2014-06-15 22:42:14] EDIT pulse/views/test/index.html: 30
+[2014-06-15 22:43:14] EDIT pulse/views/test/index.html: -1
+[2014-06-15 22:43:56] EDIT pulse/views/test/index.html: 1
+[2014-06-15 22:44:27] EDIT pulse/views/test/index.html: 0
+[2014-06-15 22:47:30] EDIT pulse/views/test/index.html: 0
+[2014-06-15 22:51:21] EDIT pulse/controllers/default.py: -5
+[2014-06-15 22:53:42] EDIT pulse/views/default/index.html: 0
+[2014-06-15 22:54:30] EDIT pulse/views/default/index.html: -1
+[2014-06-15 22:55:42] EDIT pulse/controllers/default.py: 0

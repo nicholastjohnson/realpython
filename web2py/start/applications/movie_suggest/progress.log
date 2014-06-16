@@ -1,0 +1,8 @@
+[2014-06-15 22:59:48] START
+[2014-06-15 23:06:38] EDIT movie_suggest/views/default/index.html: -23
+[2014-06-15 23:12:27] EDIT movie_suggest/views/layout.html: -114
+[2014-06-15 23:22:36] EDIT movie_suggest/controllers/default.py: -41
+[2014-06-15 23:23:49] EDIT movie_suggest/views/default/index.html: 1
+[2014-06-15 23:28:00] EDIT movie_suggest/controllers/default.py: 12
+[2014-06-15 23:30:17] EDIT movie_suggest/views/default/index.html: 11
+[2014-06-15 23:31:39] EDIT movie_suggest/views/default/index.html: 0
