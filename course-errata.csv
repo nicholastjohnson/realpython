@@ -53,3 +53,8 @@
 255, "not sure if it is okay, but you have your rotten tomatoes apikey scattered throughout this section"
 255, "in this section screenshots are difficult to connect to applicable section"
 259, "I couldn't get any of the sentiment data to load following these instructions"
+275, "routing methods by addinG a routes.py"
+275, "it is unclear where the routes.py file should be saved"
+276, "I wasn't able to get the http://localhost:8000/user/login to work - I get invalid request"
+276, "As a workaround, I put the routes.py file in the realpython\py2manager root - it works if I do that, but http://localhost doesn't look right"
+289, "#3. Take a look. Add some notes. Is unclear. I don't yet see any notes fields in the application."

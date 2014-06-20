@@ -15,4 +15,4 @@ tweets = api.search(q='#python')
 
 #disply results to screen
 for t in tweets:
-	print t.created_at, t.text, "\n"
+    print t.created_at, t.text, "\n"
