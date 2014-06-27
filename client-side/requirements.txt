@@ -1,5 +1,9 @@
+Scrapy==0.22.2
+Twisted==14.0.0
 argparse==1.2.1
 gdata==2.0.18
+queuelib==1.1.1
 requests==2.3.0
 tweepy==2.3.0
+w3lib==1.6
 wsgiref==0.1.2
