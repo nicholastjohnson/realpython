@@ -5,6 +5,7 @@ from flask import Flask, flash, redirect, render_template, request, session, \
 from functools import wraps
 from forms import AddTaskForm, RegisterForm, LoginForm
 from flask.ext.sqlalchemy import SQLAlchemy
+import datetime
 
 app = Flask(__name__)
 app.config.from_object('config')
@@ -28,6 +29,7 @@ def login_required(test):
 @app.route('/logout/')
 def logout():
     session.pop('logged_in', None)
+    session.pop('user_id', None)
     flash('You are logged out. Bye. :(')
     return redirect(url_for('login'))
 
@@ -45,7 +47,7 @@ def login():
             if u is None:
                 error = 'Invalid username or password'
                 return render_template(
-                    'login.html',
+                    "login.html",
                     form=form,
                     error=error
                 )
@@ -60,7 +62,7 @@ def login():
                 error=error
             )
     if request.method == 'GET':
-        return render_template('login.html')
+        return render_template('login.html', form=form)
 
 
 #user registration
@@ -111,6 +113,8 @@ def new_task():
                 form.name.data,
                 form.due_date.data,
                 form.priority.data,
+                datetime.datetime.utcnow(),
+                '1',
                 '1'
             )
             db.session.add(new_task)
