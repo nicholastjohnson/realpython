@@ -51,7 +51,7 @@ class RegisterForm(Form):
     confirm = PasswordField(
         'Repeat Password',
         [DataRequired(),
-         EqualTo('password', message='Passwords mus match')]
+         EqualTo('password', message='Passwords must match')]
     )
 
 

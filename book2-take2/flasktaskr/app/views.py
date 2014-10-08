@@ -53,6 +53,7 @@ def login():
                 )
             else:
                 session['logged_in'] = True
+                session['user_id'] = u.id
                 flash('You are logged in. Go crazy!')
                 return redirect(url_for('tasks'))
         else:
@@ -106,6 +107,7 @@ def tasks():
 @app.route('/add/', methods=['POST'])
 @login_required
 def new_task():
+    error = None
     form = AddTaskForm(request.form)
     if request.method == 'POST':
         if form.validate_on_submit():
@@ -115,12 +117,16 @@ def new_task():
                 form.priority.data,
                 datetime.datetime.utcnow(),
                 '1',
-                '1'
+                session['user_id']
             )
             db.session.add(new_task)
             db.session.commit()
             flash("New entry was successfully posted. Thanks!")
-    return redirect(url_for('tasks'))
+            return redirect(url_for('tasks'))
+        else:
+            return render_template('tasks.html', form=form, error=error)
+    if request.method == 'GET':
+        return render_template('tasks.html', form=form)
 
 
 #mark tasks as complete
