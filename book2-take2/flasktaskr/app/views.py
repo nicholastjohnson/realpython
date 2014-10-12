@@ -28,6 +28,7 @@ def login_required(test):
 
 
 @app.route('/logout/')
+@login_required
 def logout():
     session.pop('logged_in', None)
     session.pop('user_id', None)
@@ -46,7 +47,7 @@ def login():
                 password=request.form['password']
             ).first()
             if u is None:
-                error = 'Invalid username or password'
+                error = 'Invalid username or password.'
                 return render_template(
                     "login.html",
                     form=form,
@@ -142,7 +143,7 @@ def complete(task_id):
     new_id = task_id
     db.session.query(Task).filter_by(task_id=new_id).update({"status":"0"})
     db.session.commit()
-    flash("The task was marked as complete.")
+    flash("The task was marked as complete. Nice.")
     return redirect(url_for('tasks'))
 
 
